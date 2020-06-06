@@ -42,13 +42,6 @@ class App extends Component<AppProps, AppState> {
     } = event;
     const [firstName = "", lastName = ""] = name.split("⏎");
 
-    if (data === "⏎" || name.indexOf("⏎") === -1) {
-      event.preventDefault();
-      target.setSelectionRange(selectionStart, selectionEnd);
-
-      return;
-    }
-
     this.setState({ firstName, lastName });
   };
 
