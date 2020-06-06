@@ -1,3 +1,7 @@
 h1, p {
   font-family: Lato;
 }
+
+body {
+  font-family: sans-serif;
+}
