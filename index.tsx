@@ -73,6 +73,7 @@ class App extends Component<AppProps, AppState> {
             </IncarnateRoute>
             <IncarnateRoute subPath="about">
               <pre>{JSON.stringify(this.state, null, "  ")}</pre>
+              <small>(Press SHIFT+ENTER to Add a new field)</small>
               <textarea
                 placeholder="Name"
                 value={[firstName, lastName].join("⏎")}
